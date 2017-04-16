@@ -131,7 +131,7 @@ Map.prototype =
 					&& this.markArr[i][j] == this.markArr[i+2][j])				  
 				{
 					this.deleteType = "bottom";
-					alert(i + ' ' + j +' '+this.deleteType);
+					//alert(i + ' ' + j +' '+this.deleteType);
 					this.CurI = i; this.CurJ = j;
 					return true;								
 				} else if (j <= this.width-3
@@ -140,7 +140,7 @@ Map.prototype =
 					&& this.markArr[i][j] == this.markArr[i][j+2])
 				{
 					this.deleteType = "right";
-					alert(i + ' ' + j +' '+this.deleteType);
+					//alert(i + ' ' + j +' '+this.deleteType);
 					this.CurI = i; this.CurJ = j;
 					return true;
 				} else if ( i >= 2
@@ -149,7 +149,7 @@ Map.prototype =
 					&& this.markArr[i][j] == this.markArr[i-2][j])				  
 				{
 					this.deleteType = "top";
-					alert(i + ' ' + j +' '+this.deleteType);
+					//alert(i + ' ' + j +' '+this.deleteType);
 					this.CurI = i; this.CurJ = j;
 					return true;								
 				} else if (j >= 2
@@ -158,7 +158,7 @@ Map.prototype =
 					&& this.markArr[i][j] == this.markArr[i][j-2])
 				{
 					this.deleteType = "left";
-					alert(i + ' ' + j +' '+this.deleteType);
+					//alert(i + ' ' + j +' '+this.deleteType);
 					this.CurI = i; this.CurJ = j;
 					return true;
 				}
