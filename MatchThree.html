@@ -72,35 +72,6 @@ Map.prototype =
 		};
 
 	},
-/*	deleteLine:function()
-	{
-		for (var i = 0; i < this.height; i++) 
-		{
-			for (var j = 0; j < this.width; j++) 
-			{
-				if (j < this.width-3 
-					&& this.markArr[i][j] == this.markArr[i][j+1] 
-					&& this.markArr[i][j] == this.markArr[i][j+2])
-				{
-					for (var n = i; n > 0; n--) 
-					{
-						for (var k = j; k < j+3; k++) 
-						{
-				     		this.markArr[i][k] = this.markArr[i-1][k];						
-						};							
-					};				
-				} else if(i < this.height-3 
-					&& this.markArr[i][j] == this.markArr[i+1][j] 
-					&& this.markArr[i][j] == this.markArr[i+2][j])		  
-				{
-					for (var l = i; l >= 3; l--) 
-					{
-				     	this.markArr[l][j] = this.markArr[l-3][j];						
-					};					
-				}
-			};
-		};
-	},*/
 	deleteLine: function()
 	{
 		if(this.deleteType == 'bottom')
